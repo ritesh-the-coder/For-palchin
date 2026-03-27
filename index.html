@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Love Story ❤️</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', cursive;
+    background: linear-gradient(to bottom, #000000, #1a001a);
+    color: white;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Heading */
+h1 {
+    color: #ff4da6;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Letter Box */
+.letter {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 20px;
+    line-height: 1.8;
+    font-size: 16px;
+    text-align: left;
+}
+
+/* Image Card */
+.image-box {
+    margin-top: 25px;
+}
+
+.image-box img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 25px pink;
+}
+
+/* Footer */
+.footer {
+    margin-top: 25px;
+    color: #ff66b2;
+    font-size: 18px;
+}
+
+/* Hearts */
+.heart {
+    position: fixed;
+    bottom: 0;
+    color: pink;
+    animation: float 5s linear infinite;
+}
+
+@keyframes float {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(-100vh);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Happy 1st Month Anniversary ❤️</h1>
+
+<div class="letter">
+
+<p>My Babe ❤️,</p>
+
+<p>It’s been one month with you… and honestly, it feels like the most beautiful part of my life 💫</p>
+
+<p>Before you came into my world, everything felt normal… but after you, everything became special. Every moment, every conversation, every smile — it all started to matter more 💖</p>
+
+<p>Darling, you have no idea how much you mean to me. The way you talk, the way you smile, even your little attitude… I love everything about you 😭❤️</p>
+
+<p>I may not be perfect, but one thing I promise — I will always try my best to keep you happy 💞</p>
+
+<p>Talking to you… those late-night chats… those random laughs… they have become my favorite part of the day 💕</p>
+
+<p>You are my peace, my happiness, my everything ❤️</p>
+
+<p>Happy 1st Month Anniversary, my love 💋 This is just the beginning…</p>
+
+<p>I love you sooo much, my darling ❤️ Forever yours 💖</p>
+
+</div>
+
+<!-- IMAGE -->
+<div class="image-box">
+    <img src="palchin1.jpg">
+</div>
+
+<div class="footer">
+Forever Us 💞 | Mine Love Forever 🔐
+</div>
+
+</div>
+
+<!-- HEART SCRIPT -->
+<script>
+setInterval(() => {
+    let heart = document.createElement("div");
+    heart.innerHTML = "💖";
+    heart.className = "heart";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = Math.random() * 20 + 15 + "px";
+    document.body.appendChild(heart);
+
+    setTimeout(() => heart.remove(), 5000);
+}, 400);
+</script>
+
+</body>
+</html>
